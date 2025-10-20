@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nasa Space</title>
+<title>Live YouTube VR</title>
 <style>
   body {
     margin: 0;
@@ -12,22 +12,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
   }
-  .vr-container {
-    width: 100vw;
-    height: 100vh;
-    perspective: 1000px;
-  }
-  .video {
+  .video-container {
     width: 80%;
     height: 80%;
-    transform-style: preserve-3d;
-    animation: rotate 20s infinite linear;
-  }
-  @keyframes rotate {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
   }
   iframe {
     width: 100%;
@@ -37,12 +25,8 @@
 </style>
 </head>
 <body>
-<div class="vr-container">
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1&loop=1&playlist=xRPjKQtRXR8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1&loop=1&playlist=xRPjKQtRXR8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-<script>
-</script>
 </body>
 </html>
