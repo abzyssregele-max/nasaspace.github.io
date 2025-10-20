@@ -24,6 +24,19 @@
   }
 </style>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const adSelectors = [
+      '.adsbygoogle',
+      'iframe[src*="doubleclick.net"]',
+      'div[id*="ad"]',
+      'div[class*="advertisement"]'
+    ];
+    adSelectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(el => el.style.display = 'none');
+    });
+  });
+</script>
 <body>
 <div class="video-container">
 <iframe 
